@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="vitor, Elcio">
+    <meta name="description" content="Esse e um projeto de Informatica geral">
+    <meta name="keywords" content="programação web, programação arduino, programação android, programação mobile, manutenção de computadores, desenvolvimento mobile, desenvolvimento web">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="img/logo1.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src="js/mascaracep.js"></script>
+    <script src="js/jquerymascara.js"></script>
+    
+</head>
+
+<body>
+    <section class="container_submit_cadastro">
+        <section class="box_logo">
+            <img src="img/logo1.png" alt="logo">
+        </section>
+        <section class="box_submit_cadastro">
+            <img src="img/user.png" alt="user">
+            <button form="cadastro" type="submit">salvar</button>
+            <a href="index.html">Sair</a>
+            <span>bem vindo!</span>
+        </section>
+    </section>
+
+    <section class="container_cadastro">
+        <section class="box_cadastro">
+            <form method="post" action="" id="cadastro">
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro"  name="nome" id="nome" placeholder="Seu Nome..." maxlength="80" autofocus>
+                    <span class="fa fa-user fa-lg"></span>
+                </section>
+                <section class="input bg_input">
+                    <input type="email" class="input_cadastro" name="email" placeholder="Seu Email..." maxlength="50">
+                    <span class="fa fa-envelope fa-lg"></span>
+                </section>
+                <section class="input bg_input">
+                    <input type="password" class="input_cadastro" name="senha" placeholder="Seu Senha..." maxlength="50">
+                    <span class="fa fa-lock fa-lg"></span>
+                </section>
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro" name="cep" id="cep" placeholder="Seu Cep..." onblur="pesquisacep(this.value);" value="" maxlength="15">
+                    <span class="fa fa-street-view fa-lg"></span>
+                </section>
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro" name="rua" id="rua" placeholder="Sua Rua..." maxlength="200">
+                    <span class="fa fa-street-view fa-lg"></span>
+                </section>
+                
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro" name="bairro" id="bairro" placeholder="Seu Bairro..." maxlength="200">
+                    <span class="fa fa-street-view fa-lg"></span>
+                </section>
+                
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro" name="municipio" id="municipio" placeholder="Seu Municipio..." maxlength="200">
+                    <span class="fa fa-street-view fa-lg"></span>
+                </section>
+                
+                <section class="input bg_input">
+                    <input type="text" class="input_cadastro" name="estado" id="estado" placeholder="Seu Estado..." maxlength="200">
+                    <span class="fa fa-street-view fa-lg"></span>
+                </section>
+            </form>
+        </section>
+    </section>
+      <script src="js/cepautomatico.js"></script>
+</body>
+</html>
