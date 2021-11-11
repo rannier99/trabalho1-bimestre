@@ -1,0 +1,161 @@
+/* RESETE */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,menu,input,textarea
+{margin:0; padding:0; font-size:100%; list-style: none; text-decoration: none !important; box-sizing: border-box;}
+
+/* RESETE FIM */
+
+
+.container_alterar_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(58, 150, 255, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+
+.box_submit {}
+
+.box_logo {}
+
+.box_logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.box_submit img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.box_submit button {
+    background-color: orange;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.box_submit button:hover {
+    color: #fff;
+    background-color: #262626;
+}
+
+.box_submit a {
+    background-color: orange;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 85px;
+    color: #262626;
+    height: 24px;
+    line-height: 24px;
+}
+
+.box_submit a:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+.box_submit span {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 55px;
+    margin: auto;
+    width: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: verdana;
+}
+
+.container_alterar {
+    background: url(../img/imagem_cadastro.jpeg) fixed center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box_alterar {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.box_alterar input[class="input_alterar"] {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px 60px;
+    transition: 1s;
+}
+
+.box_alterar input[class="input_alterar"]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.box_alterar input[class="input_alterar"]:focus + span {
+    color: dodgerblue;
+}
+
+section.input {
+    position: relative;
+
+}
+
+section.input span {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    color: #aaa;
+    padding: 11px 11px;
+
+}
+
+section.input.bg_input span {
+    background-color: #aaa;
+    color: #fff;
+}
+
+section.input.bg_input input[class="input_alterar"]:focus + span {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+
+    .container_alterar_submit {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .box_submit {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .container_alterar_submit {}
+}
+
+@media screen and (min-width:1025px) {
+
+    .container_alterar_submit {}
+
+
+}

@@ -1,0 +1,221 @@
+/* RESETE */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,menu,input,textarea
+{margin:0; padding:0; font-size:100%; list-style: none; text-decoration: none !important; box-sizing: border-box;}
+
+/* RESETE FIM */
+/* CONTAINER SUBMIT CADASTRO */
+.container_submit_cadastro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(58, 150, 255, .8);
+    position: fixed;
+    width: 100%;
+    z-index:99999999999;
+}
+
+.box_submit_cadastro {
+    width: 100%;
+    max-width: 270px;
+
+}
+
+
+.box_submit_cadastro span {
+    width: 150px;
+    margin: 30px auto;
+    position: relative;
+    /*Relativo tag anterior position relative*/
+    bottom: 20px;
+    left: 30px;
+    display: block;
+    text-align: right;
+    font-family: verdana;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box_logo img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.box_submit_cadastro img {
+    height: 100px;
+}
+
+.box_submit_cadastro button {
+    width: 100%;
+    max-width: 75px;
+    height: 21px;
+    font-family: verdana;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    background-color: orange;
+    border-radius: 10px;
+    border: 0;
+}
+
+.box_submit_cadastro button:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+.box_submit_cadastro a {
+    color: #fff;
+    width: 100%;
+    max-width: 75px;
+    background-color: orange;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: verdana;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.box_submit_cadastro a:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+/* CONTAINER SUBMIT CADASTRO FIM*/
+
+/* CONTAINER CADASTRO */
+.container_cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
+    background: url(../img/imagem_cadastro.jpeg) center/cover no-repeat fixed; /*background: urlcaminho posicaox posicaoy/tamanhodofundo repetir fixo;*/    
+}
+
+.box_cadastro {
+   width: 100%;
+    
+}
+
+form {
+     width: 100%;
+     max-width:600px;
+     margin:auto;
+}
+
+form input[class="input_cadastro"] {
+    max-width:600px;
+    width:100%;
+    border: 2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px 40px;
+    transition:1s;
+}
+form input[class="input_cadastro"]:focus {
+    border-color:dodgerblue;
+    box-shadow:0 0 8px 0 dodgerblue;
+    /*box-shadow:x y borao espalhamento cor*/
+}
+form input[class="input_cadastro"]:focus + span {
+    color:dodgerblue;
+}
+section.input.bg_input span {
+    color:#fff;
+    background-color:#aaa;    
+    padding:9px 4px;
+}
+form input[class="input_cadastro"]:focus + span {
+    color:#fff;
+    background-color:dodgerblue;
+}
+
+section.input {
+    position:relative;
+}
+
+section.input span {
+    position:absolute;
+    left:0px;
+    top:10px;
+    padding:9px 8px;
+    color:#aaa;
+    transition:1s;
+}
+    .box_logo img  {
+        width:100%;
+        max-width:400px;
+        max-height:400px;
+        
+    }
+
+
+/* CONTAINER CADASTRO */
+
+@media screen and (max-width:768px) {
+
+    /* CONTAINER SUBMIT CADASTRO 768PX */
+    .container_submit_cadastro {
+        flex-direction: column;
+
+    }
+
+    .box_submit_cadastro {}
+
+    .box_submit_cadastro img {
+        position: relative;
+        top: 55px;
+    }
+
+    .box_logo {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* CONTAINER SUBMIT CADASTRO FIM 768PX */
+
+    /* CONTAINER CADASTRO  768PX*/
+    .container_cadastro {}
+
+    /* CONTAINER CADASTRO FIM 768PX*/
+}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container_submit_cadastro {
+        flex-wrap: wrap;
+    }
+
+    .box_submit_cadastro img {
+        position: relative;
+        top: 55px;
+    }
+
+    /* CONTAINER CADASTRO  769PX ATE 1024px*/
+    .container_cadastro {}
+
+    /* CONTAINER CADASTRO  769PX ATE 1024px*/
+}
+
+@media screen and (min-width:1025px) {
+
+    .container_submit_cadastro {
+        height: 130px;
+    }
+
+    .box_logo {}
+
+    .box_submit_cadastro {}
+
+    .box_submit_cadastro img {
+        position: relative;
+        top: 55px;
+
+    }
+}

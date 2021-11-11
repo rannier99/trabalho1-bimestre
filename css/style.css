@@ -1,0 +1,1142 @@
+/* RESETE */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,menu,input,textarea
+{margin:0; padding:0; font-size:100%; list-style: none; text-decoration: none !important; box-sizing: border-box;}
+
+/* RESETE FIM */
+
+/* .CONTAINER FLEX BOX Somente para o container
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+   .BOX FLEX BOX Somente para o box
+    flex-basis: 300px; LARGURA DO BOX
+    flex-grow: 2; CONTRAIR OS BOX
+    flex-shrink: 0; NÃO CONTRAIR LARGURA DO BOX
+    flex:2 0 300px; PRIMEIRO VALOR E flex-grow, SEGUNDO VALOR E flex-shrink, TERCEIRO VALOR flex-basis
+     exemplo 
+.box_bars {
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex:2 0 300px;
+}
+*/
+
+/* CONTAINER BARS */
+.container_bars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(58, 150, 255, .8);
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.box_bars {}
+
+.box_bars img {
+    width: 100%;
+    max-width: 300px;
+    opacity: 0.9;
+}
+
+.box_bars span {
+    margin: 10px;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* CONTAINER BARS FIM */
+
+
+/*   CONTAINER MENU  */
+
+.container_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    position: fixed;
+    top: 106px;
+    z-index: 999;
+    width: 100%;
+}
+
+.box_logo {}
+
+.box_logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.box_menu {}
+
+.box_menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.box_menu ul ul {
+    display: none;
+}
+
+.box_menu ul > a {
+    color: #fff;
+    font-size: 30px;
+    text-indent: 5px;
+}
+
+.box_menu ul > a span {
+    color: #fff;
+}
+
+.box_menu li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+
+.box_menu li {
+    margin: 10px;
+}
+
+
+.box_menu li > a {
+    color: #fff;
+    font-weight: 900;
+    font-family: verdana, arial, helvetica, "roobot nm";
+    font-size: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* 
+.box_menu ul > li:nth-child(1) {
+    background-color:red;
+}
+*/
+
+/*   CONTAINER MENU FIM */
+
+
+/* CONTAINER MEDIA */
+
+.container_media {
+    display: flex;
+    position: relative;
+    top: 104px;
+    z-index: -9999999;
+}
+
+.box_media {
+    width: 100%;
+}
+
+.box_media video,
+.box_media source {
+    max-width: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+
+/* CONTAINER MEDIA FIM */
+
+/* CARROUSEL carrosel_caption*/
+.carrosel_caption {
+    margin-top: 100px;
+}
+
+.slide p {
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slide h1 {
+    color: dodgerblue;
+    font-weight: 900;
+}
+
+.slide2 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide2 img {
+    width: 100%;
+}
+
+/* CARROUSEL FIM */
+/* CONTAINER DESTAQUE */
+.container_destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/paralax.jpeg) center/cover fixed no-repeat;
+}
+
+.box_destaque h3.efeito_letra {
+    background-image: url(../img/giphy.gif);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.efeito_h3 {
+    background-color: rgba(242, 242, 242, 0.6);
+    border-radius: 20px;
+}
+
+.box_destaque {
+    max-width: 340px;
+    width: 100%;
+}
+
+.box_destaque a {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 167px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_destaque a:hover {
+    background: black;
+    color: #fff;
+}
+
+/* CONTAINER DESTAQUE FIM */
+
+/* CONTAINER INOVAÇÃO  */
+
+.container_inovacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+.box_inovacao {
+    width: 330px;
+    padding: 10px;
+}
+
+.box_inovacao span {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box_inovacao:hover span {
+    color: dodgerblue;
+    transition: 2s;
+}
+
+.box_inovacao h3 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.box_inovacao p {
+    text-align: center;
+    font-family: verdana;
+}
+
+.box_inovacao a {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 117px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_inovacao a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.box_inovacao p::first-letter {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* CONTAINER INOVAÇÃO FIM */
+
+/* CONTAINER WEB */
+
+.container_web {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    height: 875px;
+    background-color: rgb(240, 239, 240);
+}
+
+.box_web img {
+    max-width: 700px;
+    width: 100%;
+}
+
+.box_web h3 {
+    font-size: 5rem;
+
+}
+
+.box_web p {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.box_web a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 167px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_web a:hover {
+    background: black;
+    color: #fff;
+}
+
+/* CONTAINER WEB FIM */
+
+
+/* CONTAINER MOBILE */
+.container_mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+    height: 875px;
+}
+
+.box_mobile {}
+
+.box_mobile h3 {
+    font: 4rem bolder;
+    text-align: center;
+    font-family: verdana;
+}
+
+.box_mobile p {
+    text-align: center;
+    font: 2.5rem bolder;
+    font-family: verdana;
+
+}
+
+.box_mobile a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 167px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_mobile a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.box_mobile img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* CONTAINER MOBILE FIM */
+
+
+.container_desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 875px;
+    background-color: rgb(240, 239, 240);
+}
+
+.box_desktop img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.box_desktop h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box_desktop p {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.box_desktop a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 167px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_desktop a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.container_arduino {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    height: 875px;
+}
+
+.box_arduino h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box_arduino {
+    width: 400px;
+}
+
+.box_arduino p {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.box_arduino img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.box_arduino a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 167px;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #262626;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.box_arduino a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+/* CONTAINER EMPREENDEDOR  */
+
+.container_empreendedor {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(30, 144, 255, 0.6);
+
+}
+
+.box_empreendedor {}
+
+.box_empreendedor span {
+    display: block;
+    font-size: 45px;
+    text-align: center;
+    color: #262626;
+    position: relative;
+    top: 15px;
+}
+
+.box_empreendedor h1 {
+    text-align: center;
+    font-weight: 900;
+    color: #363636;
+}
+
+.box_empreendedor:hover p,
+.box_empreendedor:hover h1,
+.box_empreendedor:hover span {
+    color: #fff;
+    transition: 2s;
+}
+
+.box_empreendedor p {
+    max-width: 300px;
+    text-align: center;
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+/* CONTAINER EMPREENDEDOR FIM */
+
+/* CONTAINER FRASE */
+
+.container_frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/video-motivacional-com-mensagem-para-equipe-somos-todos-um-so.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    height: 400px;
+    opacity: 0.9;
+
+}
+
+.container_frase p {
+    width: 300px;
+    color: #262626;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+/* CONTAINER FRASE FIM */
+
+.section_ancora {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    background: rgba(38, 38, 38, .6);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10000000000000;
+}
+
+/* CONTAINER RODAPÉ */
+
+.container_rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(58, 150, 255, .6);
+    flex-wrap: wrap;
+    height: 225px;
+    position: relative;
+}
+
+.box_contato {}
+
+.box_contato a {
+    display: block;
+    color: #000;
+    font-weight: 800;
+    font-family: verdana;
+    text-align: center;
+}
+
+.box_contato a:hover {
+    color: #262626;
+}
+
+.box_sociais {
+    color: black;
+    font-weight: 900;
+    font-family: verdana;
+
+}
+
+.box_sociais h3 {
+    font-weight: 900;
+    position: absolute;
+    top: 40px;
+
+}
+
+.box_sociais span {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 40px;
+}
+
+
+.box_sociais span:hover {
+    color: #eee;
+    background-color: black;
+    border-radius: 100%;
+    line-height: 40px;
+    transition: 2s;
+    transform: scale(1.5);
+}
+
+
+
+/* CONTAINER RODAPÉ FIM */
+
+@media screen and (max-width:768px) {
+
+    /* CONTAINER BARS 768PX */
+    .container_bars {
+        display: flex;
+
+    }
+
+    /* CONTAINER BARS FIM 768PX  */
+
+    /* CONTAINER MENU 768PX */
+    .container_menu {
+        align-items: center;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .box_logo {
+        display: none;
+
+    }
+
+    .box_menu {
+        width: 100%;
+        background-color: rgba(58, 150, 255, .8);
+        position: relative;
+        top: 1px;
+        display: none;
+    }
+
+    .box_menu ul {
+        flex-direction: column;
+    }
+
+    .box_menu ul ul {
+        display: none;
+    }
+
+    .box_menu ul > a {
+        display: none;
+    }
+
+    .box_menu li:nth-child(6):hover ul {
+        position: relative;
+        bottom: 10px;
+        border-radius: 15px;
+    }
+
+    .box_menu li:nth-child(6):hover li {
+        position: relative;
+        bottom: 0px;
+        top: 0px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .box_menu li:hover ul {
+        display: block;
+        position: static;
+    }
+
+    .box_menu li {
+        margin: 0px;
+        margin-top: 15px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .box_menu li > a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .box_menu li > a:hover {
+        background: orange;
+        border-radius: 15px;
+    }
+
+    /* CONTAINER MENU FIM 768PX  */
+
+    /* CONTAINER MEDIA 768PX */
+    .container_media {
+        display: flex;
+        position: relative;
+        top: 0px;
+        z-index: -9999999;
+    }
+
+    /* CONTAINER MEDIA FIM  */
+
+    /* CONTAINER WEB 768PX */
+
+    .container_web {
+        height: 603px;
+        flex-direction: column;
+
+    }
+
+    .box_web:nth-child(2) {
+        position: relative;
+        bottom: 150px;
+    }
+
+    .box_web img {
+        position: relative;
+        top: 60px;
+    }
+
+    .box_web h3 {
+        font-size: 2.5rem;
+    }
+
+    .box_web p {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .box_web a {}
+
+    .box_web a:hover {
+        background: black;
+        color: #fff;
+    }
+
+    /* CONTAINER WEB 768PX FIM */
+
+    /* CONTAINER CARROUSEL 768PX */
+
+    .carrosel_caption p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+
+    /* CONTAINER CARROUSEL 768PX FIM */
+
+    /* CONTAINER INOVAÇÃO 768PX  */
+
+    .container_inovacao {
+        flex-wrap: wrap;
+    }
+
+    .box_inovacao {
+        margin-top: 15px;
+    }
+
+
+
+    /* CONTAINER INOVAÇÃO 768PX FIM */
+
+    /* CONTAINER MOBILE 768PX */
+
+    .box_mobile h3 {
+        font: 2.5rem bolder;
+        text-align: center;
+    }
+
+    .box_mobile:nth-child(2) {
+        position: relative;
+        bottom: 0px;
+    }
+
+    /* CONTAINER MOBILE 768PX FIM */
+
+
+    /* CONTAINER DESKTOP 768PX */
+    .container_desktop {
+        flex-direction: column;
+
+    }
+
+    .box_desktop:nth-child(2) {
+        position: relative;
+        bottom: 200px;
+    }
+
+    .box_desktop h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /* CONTAINER DESKTOP 768PX FIM */
+
+
+    /* CONTAINER ARDUINO 768PX */
+    .box_arduino:nth-child(1) {
+        position: relative;
+        bottom: 120px;
+    }
+
+    /* CONTAINER ARDUINO FIM 768PX */
+
+
+    /* CONTAINER EMPREENDEDOR  */
+
+    .container_empreendedor {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* CONTAINER EMPREENDEDOR FIM */
+
+
+    /* CONTAINER RODAPÉ 968PX */
+
+    .box_sociais h3 {
+        font-weight: 900;
+        position: static;
+        top: 40px;
+
+    }
+
+    /* CONTAINER RODAPÉ 968PX FIM */
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    /* CONTAINER BARS  769PX ATÉ 1024PX */
+
+    .container_bars {
+        display: flex;
+    }
+
+    /* CONTAINER BARS FIM 769PX ATÉ 1024PX  */
+
+
+    /* CONTAINER MENU  769PX ATÉ 1024PX */
+
+    .container_menu {
+        align-items: center;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .box_logo {
+        display: none;
+
+    }
+
+    .box_menu {
+        width: 100%;
+        background-color: rgba(58, 150, 255, .8);
+        position: relative;
+        top: 1px;
+        display: none;
+    }
+
+    .box_menu ul {
+        flex-direction: column;
+    }
+
+    .box_menu ul ul {
+        display: none;
+    }
+
+    .box_menu ul > a {
+        display: none;
+    }
+
+    .box_menu li:nth-child(6):hover ul {
+        position: relative;
+        bottom: 10px;
+        border-radius: 15px;
+    }
+
+    .box_menu li:nth-child(6):hover li {
+        position: relative;
+        bottom: 0px;
+        top: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .box_menu li:hover ul {
+        display: block;
+        position: static;
+    }
+
+    .box_menu li {
+        margin: 0px;
+        margin-top: 15px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .box_menu li > a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .box_menu li > a:hover {
+        background: orange;
+        border-radius: 15px;
+    }
+
+    /* CONTAINER MENU FIM 769PX ATÉ 1024PX  */
+
+    /* CONTAINER INOVAÇÃO 769PX ATÉ 1024PX  */
+
+    .container_inovacao {
+        flex-direction: column;
+    }
+
+    .box_inovacao {
+        margin-top: 15px;
+    }
+
+
+
+    /* CONTAINER INOVAÇÃO 769PX ATÉ 1024PX FIM */
+
+
+    /* CONTAINER WEB 769PX ATÉ 1024PX */
+
+    .container_web {
+        height: 603px;
+        flex-direction: column;
+
+    }
+
+    .box_web:nth-child(2) {
+        position: relative;
+        bottom: 150px;
+    }
+
+    .box_web img {
+        position: relative;
+        top: 80px;
+    }
+
+    .box_web h3 {
+        font-size: 2.5rem;
+    }
+
+    .box_web p {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+
+    .box_web a:hover {
+        background: black;
+        color: #fff;
+    }
+
+    /* CONTAINER WEB 769PX ATÉ 1024PX FIM */
+
+
+    /* CONTAINER MOBILE 769PX ATÉ 1024PX */
+
+    .box_mobile h3 {
+        font: 2.5rem bolder;
+        text-align: center;
+    }
+
+    /* CONTAINER MOBILE 769PX ATÉ 1024PX FIM */
+
+    /* CONTAINER DESKTOP 769PX ATÉ 1024PX */
+    .container_desktop {
+        flex-direction: column;
+
+    }
+
+    .box_desktop:nth-child(2) {
+        position: relative;
+        bottom: 200px;
+    }
+
+    .box_desktop h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /* CONTAINER DESKTOP 769PX ATÉ 1024PX FIM */
+
+    /* CONTAINER ARDUINO 769PX ATÉ 1024PX */
+
+    /* CONTAINER ARDUINO FIM 769PX ATÉ 1024PX */
+
+
+    /* CONTAINER EMPREENDEDOR  */
+
+    .container_empreendedor {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* CONTAINER EMPREENDEDOR FIM */
+
+}
+
+@media screen and (min-width:1025px) {
+    /* CONTAINER BARS  1025PX */
+
+    /* CONTAINER BARS FIM 1025PX  */
+
+    /* CONTAINER MENU  1025PX */
+    .container_menu {
+        background-color: rgba(58, 150, 255, .6);
+        margin: 0;
+        top: 0;
+        height: 100%;
+        max-height: 112px;
+    }
+
+    .box_menu ul li:nth-child(6):hover ul {
+        width: 135px;
+        text-align: center;
+        background-color: rgba(58, 150, 255, .6);
+    }
+
+    .box_menu li:nth-child(7):hover ul {
+        width: 135px;
+        text-align: center;
+        background-color: rgba(58, 150, 255, .6);
+    }
+
+    .box_menu ul > a {
+        color: rgba(0, 0, 0, 1);
+
+    }
+
+    .box_menu {
+        display: block !important;
+    }
+
+    .box_menu {
+        position: relative;
+        top: 0px;
+
+    }
+
+
+    /* CONTAINER MENU 1025PX */
+
+    .carrosel_caption p {
+        font-size: 3rem;
+    }
+
+    /* CONTAINER MENU 1025PX FIM */
+
+
+
+    /* CONTAINER MENU FIM 1025PX  */
+
+
+    /* CONTAINER INOVAÇÃO 1025PX */
+
+    .box_inovacao h3 {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    /* CONTAINER INOVAÇÃO 1025PX FIM */
+
+    /* CONTAINER WEB 1025PX */
+
+    .box_web h3 {
+        font-size: 3.9rem;
+    }
+
+    .box_web img {
+        max-width: 600px;
+    }
+
+    /* CONTAINER WEB 1025PX FIM */
+
+
+    .box_contato a {
+        font-size: 20px;
+    }
+
+    .box_contato a:nth-child(3) {
+        margin-left: 140px;
+    }
+}
+
+@media screen and (min-width:3500px) {
+
+    .carrosel_caption h1 {
+        font-size: 7rem;
+    }
+
+    .carrosel_caption p {
+        font-size: 6rem;
+    }
+
+    ol.botao_carrousel li.btn_carousel {
+        font-size: 6rem;
+    }
+}
